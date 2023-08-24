@@ -1,0 +1,36 @@
+.formClass{
+    display: flex;
+    justify-content:flex-start;
+    margin-left: 42px;
+    margin-top: 17px;
+    margin-bottom: 64px;
+}
+input[type=text]{
+    height: 23px;
+    width: 200px;
+    border: 2px solid green;
+    color:green;
+    border-radius: 3px;
+    align-self: center;
+}
+.todoButton{
+    margin-left: 15px;
+    height: 27px;
+    color:rgb(80, 8, 109);
+    background-color: rgb(78, 206, 40);
+    border:2px solid black;
+    border-radius: 3px;
+}
+
+li{
+    list-style: none;
+    padding:7px;
+}
+
+.todosButton{
+    margin-left: 23px;
+    color:rgb(80, 8, 109);
+    background-color: rgb(78, 206, 40);
+    border:2px solid black;
+    border-radius: 3px;
+}
