@@ -8,8 +8,14 @@ body {
   justify-content: center;
   margin-bottom: 13px;
 }
+form{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+}
 input[type="text"] {
-  height: 23px;
+  height: 32px;
   width: 200px;
   border: 2px solid green;
   color: green;
@@ -18,11 +24,15 @@ input[type="text"] {
 }
 .todoButton {
   margin-left: 15px;
-  height: 27px;
+  height: 30px;
   color: rgb(80, 8, 109);
   background-color: rgb(78, 206, 40);
   border: 2px solid black;
   border-radius: 3px;
+  margin-top:0px;
+  text-align: center;
+  display: flex;
+  align-items: center;
 }
 ul {
   display: flex;
@@ -42,27 +52,18 @@ li {
    border: 2px solid pink;
    background-color: skyblue;
    padding-left: 35px;
-   padding-top: 7px;
-   padding-bottom: 7px;
    padding-right: 3px;
 }
 
 .todosButton {
-  margin-left: 13px;
   color: rgb(80, 8, 109);
   background-color: rgb(78, 206, 40);
-  border: 2px solid black;
-  border-radius: 3px;
+  border: 1px solid black;
+  border-radius: 50px;
 }
-
-button:hover {
-  cursor: pointer;
-  color: blue;
-}
-
-button:disabled{
-    cursor: no-drop;
-    color: rgb(80, 8, 109);
+.todosButton:disabled{
+  cursor: no-drop;
+  color: rgb(80, 8, 109);
 }
 
 .list {

@@ -90,8 +90,7 @@ const Todo = () => {
               setIsEditing(false);
             }}
             className="todoButton"
-          >
-            cancel
+          > Cancel
           </Button>
         </form>
         </div>
@@ -117,7 +116,7 @@ const Todo = () => {
   textOverflow: "ellipsis"}}>{todo.text}</span> 
             <ButtonGroup aria-label="Basic example">
             <Button onClick={() => handleEditButton(todo)}  variant="primary" className="todosButton">Edit</Button>
-            <Button onClick={() => handleDeleteButton(todo.id)}  variant="primary" className="todosButton" disabled={currentTodo.id===todo.id && !isDeleteEnabled}>Delete</Button>
+            <Button onClick={() => handleDeleteButton(todo.id)}  variant="primary" className="todosButton" disabled={currentTodo.id===todo.id && !isDeleteEnabled} style={{marginLeft:"12px",borderTopLeftRadius:"3px solid black"}}>Delete</Button>
             </ButtonGroup>
           </li>
         ))}          
